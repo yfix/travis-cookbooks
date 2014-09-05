@@ -70,10 +70,10 @@ end
 
 # install cabal
 apt_repository "cabal-install-ppa" do
-  uri          "http://ppa.launchpad.net/typeful/cabal-install/ubuntu"
+  uri          "http://ppa.launchpad.net/hvr/ghc/ubuntu"
   distribution node['lsb']['codename']
   components   ["main"]
-  key          "9DF71E85"
+  key          "F6F88286"
   keyserver    "keyserver.ubuntu.com"
   action :add
 end
